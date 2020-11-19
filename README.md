@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+# To Do List Manager
+
+### Phase 1: Application Setup
+
+    - Basic To Do List Management, using Hooks
+
+### Phase 2: Persistence
+
+    - Implement a custom Form Hook
+    - Implement a custom Ajax Hook
+    - Connect to a live API for storing To Do Items
+
+### Phase 3: Settings and Global Context
+
+    - Implement user settings for displaying items
+
+### Phase 4: Authorization
+
+    - Require a login to access the list
+    - Restrict access to adding, editing, deleting to certain user types
+
+#### UML:
+
+![Todo list UML](./img/todo-uml.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
