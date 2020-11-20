@@ -1,13 +1,15 @@
 import React from 'react';
+import Header from './components/header/header'
+import ListForm from './components/main/form'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Getting stuff</h1>
-      </div>
-    );
-  }
+const App = function () {
+  return (
+    <div>
+      <Header />
+      <ListForm />
+    </div>
+  );
 }
+
 
 export default App;
