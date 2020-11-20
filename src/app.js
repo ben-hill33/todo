@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './components/header/header'
+import ListForm from './components/main/form'
 
 const App = function () {
   return (
     <div>
       <Header />
-      <h1>Getting stuff</h1>
+      <ListForm />
     </div>
   );
 }
