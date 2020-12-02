@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Form, Button, Card } from 'react-bootstrap';
+import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
+import ListCard from './list.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -22,44 +23,58 @@ function ListForm() {
 
   return (
     <>
-      <Card style={{ width: '30rem', height: '30rem' }}>
-        <Form>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Add To Do Item</Form.Label>
-            <br />
-            <Form.Label className="text-muted">
-              To Do Item
-            </Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Item Details"
-              onChange={handleChange}
-            />
-
-          </Form.Group>
-
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>
-              Assigned To
-            </Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Assignee Name"
-              onChange={handleChange}
-            />
-          </Form.Group>
-
+    <Container>
+      <Row>
+        <Col>
+          <Card style={{ width: '40rem', height: '30rem' }} >
           <Form>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Add To Do Item</Form.Label>
+              <br />
+              <Form.Label className="text-muted">
+                To Do Item
+              </Form.Label>
+              <Form.Control
+                type="text"
+                size="lg"
+                placeholder="Item Details"
+                onChange={handleChange}
+              />
+
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>
+                Assigned To
+              </Form.Label>
+              <Form.Control
+                type="text"
+                size="lg"
+                placeholder="Assignee Name"
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form>
             <Form.Group controlId="formBasicRange">
               <Form.Label></Form.Label>
               <Form.Control type="range" />
             </Form.Group>
+            </Form>
+              <Button size="lg" variant="primary" type="submit">
+              Add Item
+              </Button>
           </Form>
-          <Button variant="primary" type="submit">
-            Add Item
-          </Button>
-        </Form>
-      </Card>
+          </Card>
+        </Col>
+        <Col md="auto">
+          <ListCard />
+        </Col>
+      </Row>
+    </Container>
+
+       
+     
       <span>
         {input}
       </span>
