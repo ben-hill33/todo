@@ -23,61 +23,58 @@ function ListForm() {
 
   return (
     <>
-    <Container>
-      <Row>
-        <Col>
-          <Card style={{ width: '40rem', height: '30rem' }} >
-          <Form>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Add To Do Item</Form.Label>
-              <br />
-              <Form.Label className="text-muted">
-                To Do Item
-              </Form.Label>
-              <Form.Control
-                type="text"
-                size="lg"
-                placeholder="Item Details"
-                onChange={handleChange}
-              />
-
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>
-                Assigned To
-              </Form.Label>
-              <Form.Control
-                type="text"
-                size="lg"
-                placeholder="Assignee Name"
-                onChange={handleChange}
-              />
-            </Form.Group>
-
+      <div class="container">
+        <div class="row">
+          <div class="col" md="auto">
+            <Card style={{ width: '40rem', height: '30rem' }} >
             <Form>
-            <Form.Group controlId="formBasicRange">
-              <Form.Label></Form.Label>
-              <Form.Control type="range" />
-            </Form.Group>
-            </Form>
-              <Button size="lg" variant="primary" type="submit">
-              Add Item
-              </Button>
-          </Form>
-          </Card>
-        </Col>
-        <Col md="auto">
-          <ListCard />
-        </Col>
-      </Row>
-    </Container>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Add To Do Item</Form.Label>
+                <br />
+                <Form.Label className="text-muted">
+                  To Do Item
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  size="lg"
+                  placeholder="Item Details"
+                  onChange={handleChange}
+                />
+              </Form.Group>
 
-       
-     
-      <span>
-        {input}
-      </span>
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>
+                  Assigned To
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  size="lg"
+                  placeholder="Assignee Name"
+                  onChange={handleChange}
+                />
+              </Form.Group>
+
+              <Form>
+              <Form.Group controlId="formBasicRange">
+                <Form.Label></Form.Label>
+                <Form.Control type="range" />
+              </Form.Group>
+              </Form>
+                <Button size="lg" variant="primary" type="submit">
+                Add Item
+                </Button>
+            </Form>
+            </Card>
+          </div>
+          
+          <div class="col" md="auto">
+            <ListCard />
+          </div>
+        </div>
+      </div>
+        <span>
+          {input}
+        </span>
     </>
   )
 }

@@ -1,14 +1,15 @@
 import React from 'react';
 import './header.scss';
 import LoginButton from './button'
-import { Navbar, Nav, Card } from 'react-bootstrap';
+import { Navbar, Nav, Card, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Header = () => {
 
   return (
-
+<Col lg="100%">
+  
     <React.Fragment>
       <Navbar bg="primary" variant="dark">
         <Nav className="mr-auto">
@@ -18,7 +19,7 @@ const Header = () => {
       </Navbar>
 
       <Card
-        style={{ width: '90%' }}
+        style={{ width: '100%' }}
         className="bg-dark text-white"
       >
         <Card.Body >
@@ -27,6 +28,7 @@ const Header = () => {
       </Card>
       <br />
     </React.Fragment>
+</Col>
   );
 }
 

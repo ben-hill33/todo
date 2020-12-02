@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
+
 import './list.scss'
 import PillPill from './pill.js'
 import { Card } from 'react-bootstrap';
 
 const ListCard = () => [
-
-  'Light',
-  'Light',
- 
-  
+  'Light',  
 ].map((variant, idx) => (
- 
-   
-    
         <Card
         bg={variant.toLowerCase()}
         key={idx}
@@ -28,9 +21,6 @@ const ListCard = () => [
             </Card.Text>
           </Card.Body>
         </Card>
-      
-    
-  
 ));
 
 
