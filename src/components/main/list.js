@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './list.scss'
+import PillPill from './pill.js'
 import { Card } from 'react-bootstrap';
 
 const ListCard = () => [
@@ -19,7 +20,7 @@ const ListCard = () => [
         style={{ width: 'rem' }}
         className="mb-2"
       >
-          <Card.Header>Header</Card.Header>
+          <PillPill />
           <Card.Body>
             <Card.Title>{variant} Card Title </Card.Title>
               <Card.Text>
