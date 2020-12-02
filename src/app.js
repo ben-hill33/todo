@@ -8,12 +8,8 @@ const App = function () {
   return (
     <div>
       <Header />
-  
-    
-          <ListForm />
-          <ListCard />
-     
-     
+      <ListForm />
+      <ListCard />
     </div>
   );
 }

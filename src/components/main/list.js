@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import './list.scss'
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 const ListCard = () => [
-  'Primary',
-  'Secondary',
-  'Success',
-  'Danger',
-  'Warning',
-  'Info',
+
   'Light',
-  'Dark',
+  'Light',
+ 
+  
 ].map((variant, idx) => (
  
    
@@ -19,7 +16,7 @@ const ListCard = () => [
         bg={variant.toLowerCase()}
         key={idx}
         text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-        style={{ width: '50rem' }}
+        style={{ width: 'rem' }}
         className="mb-2"
       >
           <Card.Header>Header</Card.Header>
