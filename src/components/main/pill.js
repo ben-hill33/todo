@@ -1,14 +1,17 @@
 import React from 'react'
 
-import { Badge } from 'react-bootstrap';
+import { Badge, Modal, Button } from 'react-bootstrap';
 
 const PillPill = () => {
     return(
     <>
         <div>
             <Badge pill variant="danger">
-            Danger
-            </Badge>{' '}
+            Complete
+            </Badge>{' '}   
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
         </div>
         <hr />
     </>
