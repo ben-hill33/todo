@@ -8,17 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
 
   return (
-<Col lg="100%">
+
+<div class="container">
   
     <React.Fragment>
-      <Navbar bg="primary" variant="dark">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-        </Nav>
-          <LoginButton />
-      </Navbar>
-
-      <Card
+    <Card
         style={{ width: '100%' }}
         className="bg-dark text-white"
       >
@@ -26,9 +20,11 @@ const Header = () => {
           To Do List Manager (3)
         </Card.Body>
       </Card>
+    
+    
       <br />
     </React.Fragment>
-</Col>
+</div>
   );
 }
 

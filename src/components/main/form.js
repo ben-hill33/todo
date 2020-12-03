@@ -26,7 +26,7 @@ function ListForm() {
       <div class="container">
         <div class="row">
           <div class="col" md="auto">
-            <Card style={{ width: '40rem', height: '30rem' }} >
+          <Card style={{ width: '35rem', height: '30rem' }} >
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Add To Do Item</Form.Label>
