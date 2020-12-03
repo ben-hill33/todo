@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import Navbarbar from './components/header/nav'
 import Header from './components/header/header'
 import ListForm from './components/main/form'
@@ -11,7 +10,6 @@ const App = function () {
       <Navbarbar />
       <Header />
       <ListForm />
-      <ListCard />
     </div>
   );
 }

@@ -7,8 +7,10 @@ const Range = () =>{
         <>
         <Form class="range">
             <Form.Group controlId="formBasicRange">
+                <br></br>
                 <Form.Label>Difficulty</Form.Label>
                 <Form.Control type="range" />
+                <br></br>
             </Form.Group>
         </Form>
         </>
