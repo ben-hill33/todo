@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
 
-<div class="container">
+
   
     <React.Fragment>
     <Card
@@ -24,7 +24,7 @@ const Header = () => {
     
       <br />
     </React.Fragment>
-</div>
+
   );
 }
 

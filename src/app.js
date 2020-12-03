@@ -8,7 +8,7 @@ const App = function () {
   return (
     <div>
       <Navbarbar />
-      <Header />
+      {/* <Header /> */}
       <ListForm />
     </div>
   );

@@ -4,6 +4,7 @@ import ListCard from './list.js'
 import Range from './range'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from '../header/header'
 import Buttons from './buttons.js';
 import Toasty from './toasts.js';
 
@@ -27,6 +28,7 @@ function ListForm() {
   return (
     <>
       <div class="container">
+         <Header />
         <div class="row">
           <div class="col" md="auto">
           <Card body style={{ width: '30rem', height: '30rem' }}>
