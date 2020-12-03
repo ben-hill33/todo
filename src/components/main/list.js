@@ -9,9 +9,9 @@ const ListCard = () => [
       
           <Card
         bg={variant.toLowerCase()}
-        key={Math.random}
+        key={idx}
         text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-        style={{ width: '50rem' }}
+        style={{ width: '55rem' }}
         className="mb-2"
       >
           <Card.Body>
