@@ -5,6 +5,7 @@ import Range from './range'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Buttons from './buttons.js';
+import Toasty from './toasts.js';
 
 
 
@@ -28,7 +29,8 @@ function ListForm() {
       <div class="container">
         <div class="row">
           <div class="col" md="auto">
-          <Card style={{ width: '30rem', height: '30rem' }} >
+          <Card body style={{ width: '30rem', height: '30rem' }}>
+            
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Add To Do Item</Form.Label>
@@ -41,7 +43,7 @@ function ListForm() {
                   size="lg"
                   placeholder="Item Details"
                   onChange={handleChange}
-                />
+                  />
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword">
@@ -53,21 +55,20 @@ function ListForm() {
                   size="lg"
                   placeholder="Assignee Name"
                   onChange={handleChange}
-                />
+                  />
               </Form.Group>
-
-              <Range />
-              <Buttons />
-              
-            </Form>
+                <Range />
+                <Buttons />
+                </Form>
+                
             </Card>
           </div>
-          
           <div class="col" md="auto">
-            <ListCard />
+           <Toasty />
           </div>
         </div>
       </div>
+        
         <span>
           {input}
         </span>

@@ -6,9 +6,9 @@ const PillPill = () => {
     <>
         <div>
             <a href="#" class="badge badge-pill badge-danger">Complete</a>
-            <button type="button" class="close" aria-label="Close">
+            {/* <button type="button" class="close" aria-label="Close"> 
             <span aria-hidden="true">&times;</span>
-            </button>
+            </button> */}
         </div>
       <hr />
     </>
