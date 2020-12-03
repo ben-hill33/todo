@@ -1,4 +1,4 @@
-
+import React from 'react'
 import './list.scss'
 import PillPill from './pill.js'
 import { Card } from 'react-bootstrap';

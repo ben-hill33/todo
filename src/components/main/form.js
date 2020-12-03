@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
 import ListCard from './list.js'
+import Range from './range'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -54,12 +55,7 @@ function ListForm() {
                 />
               </Form.Group>
 
-              <Form>
-              <Form.Group controlId="formBasicRange">
-                <Form.Label></Form.Label>
-                <Form.Control type="range" />
-              </Form.Group>
-              </Form>
+              <Range />
                 <Button size="lg" variant="primary" type="submit">
                 Add Item
                 </Button>
