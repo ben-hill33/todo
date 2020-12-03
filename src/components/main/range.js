@@ -5,7 +5,7 @@ const Range = () =>{
 
     return(
         <>
-        <Form>
+        <Form class="range">
             <Form.Group controlId="formBasicRange">
                 <Form.Label>Difficulty</Form.Label>
                 <Form.Control type="range" />

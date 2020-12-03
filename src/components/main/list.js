@@ -11,7 +11,7 @@ const ListCard = () => [
         bg={variant.toLowerCase()}
         key={idx}
         text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-        style={{ width: '55rem' }}
+        style={{ width: '60rem' }}
         className="mb-2"
       >
           <Card.Body>

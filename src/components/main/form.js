@@ -4,6 +4,7 @@ import ListCard from './list.js'
 import Range from './range'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Buttons from './buttons.js';
 
 
 
@@ -27,7 +28,7 @@ function ListForm() {
       <div class="container">
         <div class="row">
           <div class="col" md="auto">
-          <Card style={{ width: '35rem', height: '30rem' }} >
+          <Card style={{ width: '30rem', height: '30rem' }} >
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Add To Do Item</Form.Label>
@@ -56,9 +57,8 @@ function ListForm() {
               </Form.Group>
 
               <Range />
-                <Button size="lg" variant="primary" type="submit">
-                Add Item
-                </Button>
+              <Buttons />
+              
             </Form>
             </Card>
           </div>
