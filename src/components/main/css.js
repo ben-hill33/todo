@@ -27,7 +27,7 @@ function ListForm() {
 
   return (
     <>
-      <div class="container-sm">
+      <div class="container-md">
          <Header />
         <div class="row">
           <div class="col" md="auto">
@@ -35,7 +35,7 @@ function ListForm() {
             
             <Form>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label>Oh hey there internet</Form.Label>
+                <Form.Label>Add To Do Item</Form.Label>
                 <br />
                 <Form.Label className="text-muted">
                   To Do Item

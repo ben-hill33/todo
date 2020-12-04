@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PillPill from './pill'
+import GreenPill from './greenpill'
 import { Toast, Col, Row, Button, Header, Container } from 'react-bootstrap'
+
 
 const Toasty =() =>{
     const [showA, setShowA] = useState(true);
@@ -17,6 +19,7 @@ const Toasty =() =>{
                         <Toast show={showA} onClose={toggleShowA}>
                         <Toast.Header>
                             <PillPill />
+                            <GreenPill />
                             <img
                             src="holder.js/20x20?text=%20"
                             className="rounded mr-2"
